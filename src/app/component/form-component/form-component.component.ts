@@ -53,7 +53,6 @@ export class FormComponentComponent implements OnInit {
 
 
   clearAll(){
-    alert("hello");
     $("#myTable td").empty();
   }
 }

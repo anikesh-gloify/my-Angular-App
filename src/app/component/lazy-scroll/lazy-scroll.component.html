@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-s-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-s-4" *ngFor="let image of imagesList" (deferLoad)="image.show = true" lazy-load-images>
+                    <ng-container *ngIf="image.show">
+                        <img class="img-fluid" src={{image.url}}>
+                      </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
